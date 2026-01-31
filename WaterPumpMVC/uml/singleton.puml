@@ -1,0 +1,13 @@
+@startuml
+title Singleton Pattern - Database
+
+class Database {
+  -instance : Database
+  -Database()
+  +getInstance() : Database
+  +connect()
+}
+
+Database <<Singleton>>
+
+@enduml
