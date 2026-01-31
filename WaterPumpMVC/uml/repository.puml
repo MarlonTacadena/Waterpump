@@ -1,0 +1,16 @@
+@startuml
+title Repository Pattern - PumpRepository
+
+class PumpRepository {
+  -pumps : List<Pump>
+  +add(pump : Pump)
+  +getAll() : List<Pump>
+}
+
+class Pump {
+  -name : String
+}
+
+PumpRepository --> Pump : stores
+
+@enduml
