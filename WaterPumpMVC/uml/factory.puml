@@ -1,0 +1,16 @@
+@startuml
+title Factory Pattern - PumpFactory
+
+class PumpFactory {
+  +createPump(type : String) : Pump
+}
+
+class Pump {
+  -name : String
+  +turnOn()
+  +turnOff()
+}
+
+PumpFactory ..> Pump : creates
+
+@enduml
